@@ -36,3 +36,46 @@ ul,
 ol {
   list-style: none;
 }
+.content{
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  gap: 30px;
+  width: 1140px;
+  margin: 133px 30px;
+}
+
+.result{
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 16px;
+}
+
+.search-form{
+  display: flex;
+  width: 711px;
+}
+
+.content__details{
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 26px;
+}
+
+.content__list{
+  height: 298px;
+  overflow: scroll;
+}
+
+.result__video-container{
+  width: 711px;
+  height: 386px;
+}
+
+.result__video{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
