@@ -78,7 +78,7 @@ ol {
 
 .title {
   color: #fff;
-  font-family: Oswald;
+  font-family: Oswald, sans-serif;
   font-size: 75px;
   font-style: normal;
   font-weight: 700;
@@ -88,7 +88,7 @@ ol {
 
 .content__accent {
   color: #545050;
-  font-family: Oswald;
+  font-family: Oswald, sans-serif;
   font-size: 75px;
   font-style: normal;
   font-weight: 700;
@@ -150,8 +150,6 @@ ol {
 .content__video-card-thumbnail {
   width: 194px;
   height: 103px;
-  object-fit: cover;
-  object-position: center;
 }
 
 .content__video-card-description-container {
@@ -235,7 +233,7 @@ ol {
   padding: 2.5px 0;
   font-family: inherit;
   font-size: inherit;
-  color: rgba(255, 255, 255, 0.7);
+  color: rgb(255, 255, 255);
 }
 
 .search-form__label {
@@ -246,6 +244,7 @@ ol {
 
 .search-form__label:hover .search-form__label-text {
   text-decoration: underline;
+  cursor: pointer;
 }
 
 .search-form__label:active .search-form__label-text {
@@ -256,9 +255,13 @@ ol {
   outline: none;
 }
 
-.search-form__textfield:focus-visible {
+.search-form__label:has(:focus-visible) {
   outline: 1px solid #fff;
   outline-offset: 1px;
+}
+
+.content__card-link_current {
+  background-color: #545050;
 }
 
 .search-form__textfield:active {
